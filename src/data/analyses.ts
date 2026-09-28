@@ -1,0 +1,78 @@
+import type { SavedAnalysis } from '../types/analysis';
+
+export const savedAnalyses: SavedAnalysis[] = [
+{
+  id: 'SA-2026-0927',
+  commodityId: 'potato-chips',
+  commodityName: 'Potato Chips',
+  date: '2026-09-26T10:40:00',
+  recommendation: 'High-barrier MET-BOPP / BOPP',
+  feasibleCount: 3,
+  screened: 15,
+  shelfFit: 'Meets target',
+  inputs: { moisture: 2, fat: 35, pH: 6, aw: 0.25, respirationRate: null, shelfLifeDays: 120, temperature: 30, rh: 70, storage: 'ambient', transport: 'regional', retailLight: true },
+  ruleVersion: 'Rules v1.4.2',
+  modelVersion: 'Ranker v0.9.3',
+  dbVersion: 'Materials DB 2026.09',
+  owner: 'Ananya Rao'
+},
+{
+  id: 'SA-2026-0921',
+  commodityId: 'fresh-tomatoes',
+  commodityName: 'Fresh Tomatoes',
+  date: '2026-09-24T16:05:00',
+  recommendation: 'Micro-perforated LDPE (MAP)',
+  feasibleCount: 3,
+  screened: 15,
+  shelfFit: 'Meets target',
+  inputs: { moisture: 94, fat: 0.2, pH: 4.3, aw: 0.99, respirationRate: 6, shelfLifeDays: 14, temperature: 12, rh: 90, storage: 'chilled', transport: 'regional', retailLight: false },
+  ruleVersion: 'Rules v1.4.2',
+  modelVersion: 'Ranker v0.9.3',
+  dbVersion: 'Materials DB 2026.09',
+  owner: 'Vikram Shah'
+},
+{
+  id: 'SA-2026-0914',
+  commodityId: 'paneer',
+  commodityName: 'Fresh Paneer',
+  date: '2026-09-19T09:12:00',
+  recommendation: 'PA / PE vacuum pouch',
+  feasibleCount: 2,
+  screened: 15,
+  shelfFit: 'Meets target',
+  inputs: { moisture: 55, fat: 22, pH: 5.6, aw: 0.95, respirationRate: null, shelfLifeDays: 21, temperature: 4, rh: 85, storage: 'chilled', transport: 'regional', retailLight: false },
+  ruleVersion: 'Rules v1.4.1',
+  modelVersion: 'Ranker v0.9.2',
+  dbVersion: 'Materials DB 2026.08',
+  owner: 'Ananya Rao'
+},
+{
+  id: 'SA-2026-0908',
+  commodityId: 'wheat-flour',
+  commodityName: 'Whole Wheat Flour',
+  date: '2026-09-12T14:30:00',
+  recommendation: 'PP woven sack + LDPE liner',
+  feasibleCount: 9,
+  screened: 15,
+  shelfFit: 'Meets target',
+  inputs: { moisture: 12, fat: 2, pH: 6.1, aw: 0.6, respirationRate: null, shelfLifeDays: 180, temperature: 30, rh: 75, storage: 'ambient', transport: 'regional', retailLight: true },
+  ruleVersion: 'Rules v1.4.1',
+  modelVersion: 'Ranker v0.9.2',
+  dbVersion: 'Materials DB 2026.08',
+  owner: 'Rohit Menon'
+},
+{
+  id: 'SA-2026-0902',
+  commodityId: 'cornflakes',
+  commodityName: 'Breakfast Cereal',
+  date: '2026-09-04T11:48:00',
+  recommendation: 'HDPE-EVOH liner + carton',
+  feasibleCount: 4,
+  screened: 15,
+  shelfFit: 'Meets target',
+  inputs: { moisture: 3, fat: 1, pH: 6.5, aw: 0.3, respirationRate: null, shelfLifeDays: 240, temperature: 30, rh: 65, storage: 'ambient', transport: 'regional', retailLight: true },
+  ruleVersion: 'Rules v1.4.0',
+  modelVersion: 'Ranker v0.9.1',
+  dbVersion: 'Materials DB 2026.08',
+  owner: 'Vikram Shah'
+}];

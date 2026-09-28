@@ -1,0 +1,62 @@
+/* @import url() FONT IMPORTS MUST ALWAYS BE AT THE VERY TOP OF THIS FILE, ABOVE THE TAILWIND IMPORTS — DO NOT DELETE THIS COMMENT */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+/* CRITICAL: THE FOLLOWING TAILWIND IMPORTS MUST NEVER BE DELETED OR REORDERED — DO NOT DELETE THIS COMMENT */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* END TAILWIND IMPORTS — ALL OTHER CSS MUST GO BELOW THIS LINE */
+
+html,
+body,
+#root {
+  min-height: 100%;
+  background: #f5f4ef;
+}
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #0f1d1a;
+  -webkit-font-smoothing: antialiased;
+}
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+input[type='range'].sa-range {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  border-radius: 999px;
+  background: #e4e2da;
+  outline: none;
+}
+input[type='range'].sa-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  background: #fff;
+  border: 2px solid #166a53;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(15, 29, 26, 0.2);
+}
+input[type='range'].sa-range::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  background: #fff;
+  border: 2px solid #166a53;
+  cursor: pointer;
+}
+input[type='range'].sa-range:focus-visible::-webkit-slider-thumb {
+  outline: 3px solid #9fd1bf;
+}
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body,
+  #root {
+    background: #fff;
+  }
+}
