@@ -1,4 +1,3 @@
-import React from 'react';
 import { ArrowRightIcon, ArrowUpRightIcon } from 'lucide-react';
 import { commodities, getCommodity } from '../data/commodities';
 import { materials } from '../data/materials';
